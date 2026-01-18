@@ -1,0 +1,499 @@
+
+*** Running vivado
+    with args -log fpga_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Jan 18 06:33:28 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpga_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 544.309 ; gain = 219.664
+Command: read_checkpoint -auto_incremental -incremental C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.srcs/utils_1/imports/synth_1/fpga_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.srcs/utils_1/imports/synth_1/fpga_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fpga_top -part xczu5ev-fbvb900-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Device 21-403] Loading part xczu5ev-fbvb900-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12352
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1861.535 ; gain = 210.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'clk_125m_pll' [C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/.Xil/Vivado-12160-DESKTOP-8UDMB9L/realtime/clk_125m_pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_125m_pll' (0#1) [C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/.Xil/Vivado-12160-DESKTOP-8UDMB9L/realtime/clk_125m_pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'video_uut' [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:6]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[0]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[1]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[2]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[3]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[4]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[5]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[6]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[7]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[8]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[9]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[10]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[11]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[12]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[13]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[14]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[15]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[16]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[17]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[18]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[19]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[20]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[21]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[22]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[23]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[24]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[25]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[26]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[27]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[28]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[29]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[30]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[31]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[32]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[33]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[34]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[35]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[36]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[37]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[38]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[39]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[40]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[41]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[42]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[43]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[44]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[45]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[46]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[47]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[48]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[49]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[50]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[51]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[52]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[53]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[54]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[55]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[56]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[57]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[58]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[59]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[60]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[61]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[62]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[63]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[64]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[65]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[66]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[67]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[68]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[69]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[70]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[71]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[72]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[73]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[74]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[75]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[76]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[77]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[78]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[79]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[80]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[81]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[82]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[83]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[84]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[85]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[86]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[87]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[88]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[89]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[90]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[91]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[92]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[93]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[94]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[95]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[96]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[97]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[98]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'cells_cur[99]' is not inferred as ram due to incorrect usage [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:45]
+INFO: [Common 17-14] Message 'Synth 8-7186' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'video_uut' (0#1) [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'xcv_hdmi_reset_synchronizer' [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:332]
+INFO: [Synth 8-6155] done synthesizing module 'xcv_hdmi_reset_synchronizer' (0#1) [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:332]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:83082]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:83082]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2855]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2855]
+INFO: [Synth 8-6157] synthesizing module 'xcv_hdmi' [C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/.Xil/Vivado-12160-DESKTOP-8UDMB9L/realtime/xcv_hdmi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xcv_hdmi' (0#1) [C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/.Xil/Vivado-12160-DESKTOP-8UDMB9L/realtime/xcv_hdmi_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'drpclk_in' does not match port width (4) of module 'xcv_hdmi' [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:241]
+WARNING: [Synth 8-689] width (3) of port connection 'gthrxn_in' does not match port width (4) of module 'xcv_hdmi' [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:242]
+WARNING: [Synth 8-689] width (3) of port connection 'gthrxp_in' does not match port width (4) of module 'xcv_hdmi' [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:243]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/.Xil/Vivado-12160-DESKTOP-8UDMB9L/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/.Xil/Vivado-12160-DESKTOP-8UDMB9L/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (0#1) [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:16]
+WARNING: [Synth 8-6014] Unused sequential element n_reg was removed.  [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/video_uut.sv:133]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.sv:282]
+WARNING: [Synth 8-3917] design fpga_top has port pin_hdmi_tx_pixclk_sel_n_o driven by constant 0
+WARNING: [Synth 8-3917] design fpga_top has port pin_hdmi_rx_oe_o driven by constant 0
+WARNING: [Synth 8-3917] design fpga_top has port pin_hdmi_tx_cec_o driven by constant 1
+WARNING: [Synth 8-7129] Port pcen_i in module hdmi_tx_1080p is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[23] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[22] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[21] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[20] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[19] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[18] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[17] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[16] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[15] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[14] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[13] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[12] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[11] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[10] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[9] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[8] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[7] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[6] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[5] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[4] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[3] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[2] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[1] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vid_rgb_i[0] in module video_uut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_rx_clk_i_n in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_rx_clk_i_p in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_tx_fault_n_i in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_tx_hpd_i in module fpga_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:09:19 ; elapsed = 00:09:25 . Memory (MB): peak = 6335.000 ; gain = 4684.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:29 ; elapsed = 00:09:35 . Memory (MB): peak = 6335.000 ; gain = 4684.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:09:29 ; elapsed = 00:09:35 . Memory (MB): peak = 6335.000 ; gain = 4684.219
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 6413.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0'
+Finished Parsing XDC File [c:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0'
+Parsing XDC File [c:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.gen/sources_1/ip/xcv_hdmi/xcv_hdmi/xcv_hdmi_in_context.xdc] for cell 'xcvr_hdmi'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6730.176 ; gain = 7.887
+Finished Parsing XDC File [c:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.gen/sources_1/ip/xcv_hdmi/xcv_hdmi/xcv_hdmi_in_context.xdc] for cell 'xcvr_hdmi'
+Parsing XDC File [c:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.gen/sources_1/ip/clk_125m_pll/clk_125m_pll/clk_125m_pll_in_context.xdc] for cell 'clk_125m_pll'
+Finished Parsing XDC File [c:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.gen/sources_1/ip/clk_125m_pll/clk_125m_pll/clk_125m_pll_in_context.xdc] for cell 'clk_125m_pll'
+Parsing XDC File [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.xdc]
+WARNING: [Vivado 12-508] No pins matched 'clk_125m_pll/inst/mmcme4_adv_inst/CLKOUT0'. [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.xdc:18]
+Finished Parsing XDC File [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/fpga_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/uOttaHack_FPGA/rtl/fpga_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.168 . Memory (MB): peak = 6730.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:11:28 ; elapsed = 00:11:32 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5ev-fbvb900-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:11:29 ; elapsed = 00:11:32 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:11:29 ; elapsed = 00:11:32 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tmds_encoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           STATE_CONTROL |                               00 |                               00
+          STATE_PREAMBLE |                               01 |                               10
+         STATE_GUARDBAND |                               10 |                               01
+             STATE_VIDEO |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tmds_encoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:15:01 ; elapsed = 00:15:15 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   5 Input    8 Bit       Adders := 6     
+	   4 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   8 Input    4 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 4     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 40    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 31    
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 10371 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 2     
+	   4 Input   24 Bit        Muxes := 1     
+	   9 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 9     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 15    
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5185  
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 36    
+	  17 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design fpga_top has port pin_hdmi_tx_pixclk_sel_n_o driven by constant 0
+WARNING: [Synth 8-3917] design fpga_top has port pin_hdmi_rx_oe_o driven by constant 0
+WARNING: [Synth 8-3917] design fpga_top has port pin_hdmi_tx_cec_o driven by constant 1
+WARNING: [Synth 8-7129] Port pin_hdmi_rx_clk_i_n in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_rx_clk_i_p in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_tx_fault_n_i in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pin_hdmi_tx_hpd_i in module fpga_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:18:33 ; elapsed = 00:18:50 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:19:00 ; elapsed = 00:19:18 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:20:52 ; elapsed = 00:21:12 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:21:37 ; elapsed = 00:22:00 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:23:06 ; elapsed = 00:23:30 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:23:06 ; elapsed = 00:23:30 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:23:16 ; elapsed = 00:23:40 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:23:16 ; elapsed = 00:23:40 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:23:40 ; elapsed = 00:24:04 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:23:40 ; elapsed = 00:24:04 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|kvm_vid_top_rgb | tpg_bars_rgb/tx_vh_d3_reg[1]                           | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|kvm_vid_top_rgb | hdmi_tx_1080p/enc_b/pipe_delay/DELAY_NE0.sr_reg[10][7] | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|kvm_vid_top_rgb | hdmi_tx_1080p/enc_g/pipe_delay/DELAY_NE0.sr_reg[10][7] | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|kvm_vid_top_rgb | hdmi_tx_1080p/enc_r/pipe_delay/DELAY_NE0.sr_reg[10][7] | 10     | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|kvm_vid_top_rgb | hsync_d_reg[2]                                         | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|kvm_vid_top_rgb | vsync_d_reg[2]                                         | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|kvm_vid_top_rgb | de_d_reg[2]                                            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_125m_pll  |         1|
+|2     |xcv_hdmi      |         1|
+|3     |vio_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_125m_pll |     1|
+|2     |vio          |     1|
+|3     |xcv_hdmi     |     1|
+|4     |BUFG         |     1|
+|5     |BUFG_GT      |     1|
+|6     |CARRY8       |    82|
+|7     |IBUFDS_GTE4  |     1|
+|8     |LUT1         |    69|
+|9     |LUT2         | 16625|
+|10    |LUT3         |  1217|
+|11    |LUT4         |  7645|
+|12    |LUT5         | 12293|
+|13    |LUT6         | 31334|
+|14    |MUXF7        |  8921|
+|15    |MUXF8        |  4087|
+|16    |SRL16E       |    30|
+|17    |FDPE         |     5|
+|18    |FDRE         | 42534|
+|19    |FDSE         |     2|
+|20    |IBUF         |     4|
+|21    |IBUFDS       |     1|
+|22    |OBUF         |     8|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:23:40 ; elapsed = 00:24:05 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:12:47 ; elapsed = 00:22:47 . Memory (MB): peak = 6732.574 ; gain = 4684.219
+Synthesis Optimization Complete : Time (s): cpu = 00:23:41 ; elapsed = 00:24:07 . Memory (MB): peak = 6732.574 ; gain = 5081.793
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 6732.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13096 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpga_top' is not ideal for floorplanning, since the cellview 'video_uut' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC BUFG_GT_SYNC for BUFG_GT bufg_gt_inst
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 6732.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Synth Design complete | Checksum: d88411aa
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:24:21 ; elapsed = 00:24:51 . Memory (MB): peak = 6732.574 ; gain = 6127.758
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.202 . Memory (MB): peak = 6732.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/uOttaHack_FPGA/fpga_top/fpga_top.runs/synth_1/fpga_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 6732.574 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpga_top_utilization_synth.rpt -pb fpga_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 18 06:58:48 2026...
